@@ -1,0 +1,43 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1em;
+	font-variation-settings:"wdth";
+}
+
+.navbar {
+	/* overflow: hidden; */
+	background-color: #e83e8c;
+}
+.navbar-nav {
+	margin-left: 70%;
+}
+
+
+#logo-suricata {
+	top: 12px;
+	left: 119px;
+	width: 132px;
+	height: 53px;
+}
+
+li{
+	font-size: 1.375em;
+	padding-inline: 5%;
+}
+
+.font-OSans-400{
+	font-weight: 400;
+}
+
+.font-OSans-700{
+	font-weight:700;
+}
+
