@@ -34,13 +34,13 @@
 		<title>Suricata</title>
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-sm">
+		<nav class="navbar navbar-expand-sm sticky-top">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#">
 					<img id="logo-suricata" src="assets/img/logo.png" alt="Avatar Logo" />
 				</a>
 				<button
-					class="navbar-toggler border border-1 text-white-50"
+					class="btn-navbar navbar-toggler border border-1 text-white-50"
 					type="button"
 					data-bs-toggle="collapse"
 					data-bs-target="#collapsibleNavbar">
@@ -62,23 +62,31 @@
 			</div>
 		</nav>
 
-		<h1 class="font-bold-700">Nuestros Productos</h1>
+		<h1 class="open-sans-700">Nuestros Productos</h1>
 		<div class="row row-cols-auto">
 			<!-- CARDs 1-->
 			<div class="card shadow">
 				<img src="assets/img/colaciones.jpg" class="card-img-top" alt="..." />
 				<div class="card-body">
 					<h5 class="card-title">Colaciones</h5>
-					<p class="card-text">
-						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-					</p>
+					<div id="text-p1" class="text-card">
+						<p>Sed ut perspiciatis unde omnis iste natus error sit</p>
+						<div class="more-text">
+							<p>
+								voluptatem accusantium doloremque laudantium, totam rem aperiam,
+								eaque ipsa quae ab illo inventore veritatis et quasi architecto
+								beatae vitae dicta sunt explicabo.
+							</p>
+						</div>
+					</div>
 				</div>
 				<ul class="list-group list-group-flush">
 					<li class="list-group-item">An item</li>
 					<li class="list-group-item">A second item</li>
 				</ul>
 				<div class="card-body">
-					<a href="#" class="card-link">Ver más</a>
+					<a href="#text-p1">Ver más</a>
+					<a href="#text-p1">ocultar</a>
 					<a href="#" class="card-link">Comprar</a>
 				</div>
 			</div>
@@ -179,20 +187,21 @@
 			</div>
 		</div>
 		<section class="payment-card-section">
-			<p>Ahora aceptamos</p>
-
-			<i class="fa-brands fa-cc-visa"></i>
-			<i class="fa-brands fa-cc-mastercard"></i>
-			<i class="fa-brands fa-cc-amex"></i>
-			<i class="fa-brands fa-cc-diners-club"></i>
-			<i class="fa-brands fa-cc-paypal"></i>
-			<i class="fa-brands fa-cc-discover"></i>
+			<div>
+				<p class="text-white">Ahora aceptamos</p>
+			</div>
+			<div>
+				<i class="fa-brands text-white fa-cc-visa"></i>
+				<i class="fa-brands text-white fa-cc-mastercard"></i>
+				<i class="fa-brands text-white fa-cc-amex"></i>
+				<i class="fa-brands text-white fa-cc-diners-club"></i>
+				<i class="fa-brands text-white fa-cc-paypal"></i>
+				<i class="fa-brands text-white fa-cc-discover"></i>
+			</div>
 		</section>
 
 		<footer class="">
-			<div class="">
-				<img src="assets/img/logo-footer.png" alt="logo-suricata" />
-			</div>
+			<img src="assets/img/logo-footer.png" alt="logo-suricata" />
 		</footer>
 
 		<script

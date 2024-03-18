@@ -12,51 +12,60 @@ body {
 	font-variation-settings:"wdth";
 }
 
-.navbar {
-	/* overflow: hidden; */
+.open-sans-700, .payment-card-section, .card-title{
+	font-weight:700;
+}
+
+
+h1{     /* ok */
+	font-size: 3.75em; /*60px*/
+	color: #707070;
+	margin-top: 139px;
+	width: 100%;
+	word-wrap: break-word;
+	text-align: center;
+;
+	
 	
 }
 
 
+/* ***** SECCION NAVBAR ****** */
+
 .navbar {
-	position: fixed;
-	top: 0;
 	width: 100%;
-	z-index: 1000;
 	background-color: #e83e8c;
 }
 
-.navbar-nav {
-	margin-left: 70%;
+.navbar-nav{
+	float: right; /* alinea a la derecha el menu desplegable */
+	position: absolute;  
+	right: 118px;
+	
 }
 
 #logo-suricata {
 	top: 12px;
-	left: 119px;
+	margin-left: 119px;
 	width: 132px;
 	height: 53px;
 }
 
 
-h1{
-	font-size: 3.75em;
-	text-align: center;
-	color: #707070;
-	margin-top: 139px;
+
+/* ordenar tarjetas */
+.row{
+	
+	display: flex;
+	flex-direction: row;
+	justify-content:space-evenly;
 }
 
-i{
-	font-size: 1.375em;
-	padding-inline: 5%;
-	font-weight: 400;
-}
 
-.font-regular-400{
-	font-weight: 400;
-}
-
-.font-bold-700, .payment-card-section, .card-title{
-	font-weight:700;
+/* distancia entre tarjetas */
+.card{
+	margin: 5%;
+	padding: 0px;
 }
 
 
@@ -66,6 +75,7 @@ i{
 }
 
 .card-body{
+
 	width: 248px;
 }
 
@@ -76,12 +86,62 @@ color: #373A3C;
 opacity: 1;
 }
 
-.payment-card-section{
-	color: #FFFFFF;
-	font-size:2.5em;
-	background-color:#17A2B8;
+.text-card .more-text {
+	display: none;
 }
 
+
+
+.text-card:target .more-text {
+	display: block;
+	
+}
+
+/* .text-card:target .hidden-text {
+	display: none;
+} */
+
+
+
+
+/* SECCION TARJETAS DE CREDITO */
+
+.payment-card-section{
+	font-size:2.5em;
+	background-color:#17A2B8;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	height: auto;
+	min-height: 170px;
+	position: relative;
+
+}	
+
+
+
+
+.payment-card-section div{
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+
+}
+
+/* iconos de tarjetas de credito */
+i{
+	font-size: 1.375em;
+	padding-inline: 5%;
+	font-weight: 400;
+}
+
+
+
+
+
+
+/* **** SECCION FOOTER ***** */
 
 footer{
 	top: 1377px;
@@ -95,36 +155,36 @@ align-items: center;
 justify-content: center;
 }
 
-footer div{
-	display:flex;
-	justify-content: center;
-	align-items: center;
-}
-
-footer div img{
+footer img{
 width: 36px;
 height: 67px;
 }
 
-.card{
-	margin: 5%;
-}
-
-
-.row{
-	
-	display: flex;
-	flex-direction: row;
-	justify-content:space-evenly;
-	
-	
-}
 
 
 
 @media screen and (max-width: 576px) {
+	h1{
+		font-size:35px;
+		text-align: center;
+	}
+
+	#logo-suricata{
+		margin-left: 40px;
+	}
+
+	.btn-navbar{
+		margin-right: 40px;
+	}
+
 	.payment-card-section {
 	display: none;
 	}
+
+	.navbar-nav{
+		position: static;
+		
+	}
 }
+
 
