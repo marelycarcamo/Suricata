@@ -8,7 +8,7 @@ body {
 	font-optical-sizing: auto;
 	font-style: normal;
 	font-weight: 400;
-	font-size: 1em;
+	font-size: 16px;
 	font-variation-settings:"wdth";
 }
 
@@ -18,15 +18,13 @@ body {
 
 
 h1{     /* ok */
-	font-size: 3.75em; /*60px*/
+	font-size: 60px;
 	color: #707070;
-	margin-top: 139px;
+	margin-top: 64px;
 	width: 100%;
 	word-wrap: break-word;
 	text-align: center;
-;
-	
-	
+
 }
 
 
@@ -55,19 +53,20 @@ h1{     /* ok */
 
 /* ordenar tarjetas */
 .row{
-	
 	display: flex;
 	flex-direction: row;
-	justify-content:space-evenly;
+	justify-content:center;
+	top:224px;
+	/* padding-inline:180px;  */
+	
 }
-
 
 /* distancia entre tarjetas */
 .card{
 	margin: 5%;
 	padding: 0px;
+	
 }
-
 
 .card img{
 	width: 248px;
@@ -75,7 +74,6 @@ h1{     /* ok */
 }
 
 .card-body{
-
 	width: 248px;
 }
 
@@ -89,7 +87,6 @@ opacity: 1;
 .text-card .more-text {
 	display: none;
 }
-
 
 
 .text-card:target .more-text {
@@ -107,7 +104,7 @@ opacity: 1;
 /* SECCION TARJETAS DE CREDITO */
 
 .payment-card-section{
-	font-size:2.5em;
+	font-size:40px;
 	background-color:#17A2B8;
 	display: flex;
 	flex-direction: row;
@@ -115,12 +112,7 @@ opacity: 1;
 	align-items: center;
 	height: auto;
 	min-height: 170px;
-	position: relative;
-
 }	
-
-
-
 
 .payment-card-section div{
 	display: flex;
@@ -131,8 +123,8 @@ opacity: 1;
 
 /* iconos de tarjetas de credito */
 i{
-	font-size: 1.375em;
-	padding-inline: 5%;
+	font-size: 22px;
+	padding-inline: 2%;
 	font-weight: 400;
 }
 
@@ -162,16 +154,14 @@ height: 67px;
 
 
 
-
 @media screen and (max-width: 576px) {
 	h1{
 		font-size:35px;
 		text-align: center;
+		margin-top: 41px;
 	}
 
-	#logo-suricata{
-		margin-left: 40px;
-	}
+	
 
 	.btn-navbar{
 		margin-right: 40px;
@@ -181,10 +171,28 @@ height: 67px;
 	display: none;
 	}
 
+	#logo-suricata{
+		margin-left: 40px;
+	}
+	
+
 	.navbar-nav{
 		position: static;
-		
 	}
 }
 
+@media screen and (max-width: 768px) {
+
+h1{
+	font-size:48px;
+}
+
+
+
+
+.payment-card-section div p{
+	display: none;
+	}
+
+}
 
